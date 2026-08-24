@@ -308,7 +308,7 @@ Today I connected my NLP pipeline with a machine learning model. Instead of ente
 
 # Day 7 – Building the AI Security Report
 
-Today I transformed the phishing detector into a cybersecurity-style email analysis tool.
+Today I transformed the phishing detector into a cybersecurity style email analysis tool.
 
 ## Building the AI Security Report
 
@@ -484,4 +484,4 @@ Today I completed and polished the AI Phishing Email Analyser project. I evaluat
 
 # Final Project Summary
 
-Over eight days, I built an AI-powered phishing email analyser from scratch. I started by learning phishing fundamentals and machine learning basics, then trained a Logistic Regression model, built an NLP preprocessing pipeline, converted email text into TF-IDF features, trained a second text-based classifier, created an AI security report with confidence scoring and recommendations, evaluated the model, and prepared the project for GitHub. This project strengthened my practical skills in Python, Machine Learning, Natural Language Processing, and Cybersecurity while giving me a portfolio project that demonstrates an end-to-end AI solution.
+Over eight days, I built an AI powered phishing email analyser from scratch. I started by learning phishing fundamentals and machine learning basics, then trained a Logistic Regression model, built an NLP preprocessing pipeline, converted email text into TF-IDF features, trained a second text-based classifier, created an AI security report with confidence scoring and recommendations, evaluated the model, and prepared the project for GitHub. This project strengthened my practical skills in Python, Machine Learning, Natural Language Processing, and Cybersecurity while giving me a portfolio project that demonstrates an end to end AI solution.
