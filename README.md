@@ -136,7 +136,7 @@ The project generates:
 
 **Mohau Klas Phiandi**
 
-Bachelor of science in Mathematical Sciences 
+Bachelor of science in Mathematical Sciences. 
 Major:Computer Science
 
 Cybersecurity | Networking | Machine Learning | Data Science
