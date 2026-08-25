@@ -85,3 +85,169 @@ The application cleans raw email text, converts it into numerical TF-IDF feature
 4. A Logistic Regression model analyses the email.
 5. The application predicts whether the email is **Phishing** or **Legitimate**.
 6. The analyser generates a confidence score, risk level, suspicious keywords, and a security recommendation.
+
+---
+
+## 🔤 NLP Pipeline
+
+<p align="center">
+  <img src="assets/diagrams/nlp_pipeline.png" alt="NLP Pipeline Diagram" width="90%">
+</p>
+
+Before the AI model can understand an email, the text is cleaned and transformed using a Natural Language Processing (NLP) pipeline.
+
+### NLP Steps
+
+| Step | Purpose |
+|------|---------|
+| Lowercase Conversion | Treats **Your** and **your** as the same word. |
+| Tokenization | Breaks an email into individual words (tokens). |
+| Remove Punctuation | Removes symbols such as `. , ! : ?`. |
+| Remove Stopwords | Removes common English words that do not help classification. |
+| Lemmatization | Converts words into their base form, for example **verified** → **verify**. |
+| TF-IDF Vectorization | Converts cleaned words into numerical features that the Machine Learning model understands. |
+
+### Example
+
+**Original Email**
+
+> Subject: Urgent! Verify your account immediately.
+
+**After NLP Preprocessing**
+
+```text
+subject urgent verify account immediately
+```
+
+The cleaned email is then converted into TF-IDF features before being analysed by the AI model.
+
+---
+
+## 📂 Project Structure
+
+```text
+AI-Phishing-Email-Analyser
+│
+├── assets
+│   ├── banner.png
+│   ├── diagrams
+│   │   ├── ai_workflow.png
+│   │   └── nlp_pipeline.png
+│   └── screenshots
+│
+├── dataset
+│   ├── email_phishing_data.csv
+│   └── sample_emails.csv
+│
+├── models
+│   ├── phishing_detector.pkl
+│   ├── text_phishing_detector.pkl
+│   └── tfidf_vectorizer.pkl
+│
+├── notebooks
+│   └── EDA_Email_Phishing.ipynb
+│
+├── results
+│   ├── confusion_matrix.png
+│   └── model_performance.png
+│
+├── src
+│   ├── preprocessing.py
+│   ├── train_model.py
+│   ├── train_text_model.py
+│   ├── predictor.py
+│   ├── email_analyser.py
+│   ├── evaluate_model.py
+│   ├── vectorize_emails.py
+│   ├── load_dataset.py
+│   └── utils.py
+│
+├── README.md
+├── requirements.txt
+├── notes.md
+├── LICENSE
+└── .gitignore
+```
+---
+
+## ⚙️ Installation
+
+Follow these steps to run the project locally.
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/mkphiandi408/AI-Phishing-Email-Analyser.git
+```
+
+### 2. Open the Project
+
+```bash
+cd AI-Phishing-Email-Analyser
+```
+
+### 3. Create a Virtual Environment
+
+```bash
+python -m venv .venv
+```
+
+### 4. Activate the Virtual Environment
+
+**Windows PowerShell**
+
+```powershell
+.venv\Scripts\Activate.ps1
+```
+
+### 5. Install Project Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+---
+
+## 🚀 How to Run the Project
+
+### Train the Numerical Feature Model
+
+```bash
+py src/train_model.py
+```
+
+### Train the TF-IDF Email Model
+
+```bash
+py src/train_text_model.py
+```
+
+### Launch the AI Email Analyser
+
+```bash
+py src/email_analyser.py
+```
+
+### Example Email
+
+```text
+Subject: Urgent Account Verification
+
+Dear Customer,
+
+Your account has been suspended due to unusual activity.
+
+Click the link below immediately to verify your password.
+
+Thank you.
+```
+
+### Expected Output
+
+```text
+Prediction       : PHISHING EMAIL
+Confidence Score : 62.51%
+Risk Level       : UNCERTAIN
+
+Recommendation:
+Do NOT click suspicious links or provide passwords.
+```
