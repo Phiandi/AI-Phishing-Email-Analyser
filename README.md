@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  Detect phishing emails • Analyse suspicious content • Generate AI-powered security reports
+  Detect phishing emails • Analyse suspicious content • Generate AI powered security reports
 </p>
 
 ---
@@ -250,4 +250,129 @@ Risk Level       : UNCERTAIN
 
 Recommendation:
 Do NOT click suspicious links or provide passwords.
-```
+
+---
+
+## 📊 Model Performance
+
+The phishing detection model was trained using **Logistic Regression** with **TF-IDF** features extracted from cleaned email text.
+
+### Evaluation Summary
+
+| Metric | Result |
+|--------|---------|
+| Algorithm | Logistic Regression |
+| Feature Extraction | TF-IDF |
+| Classification | Binary (Phishing / Legitimate) |
+| Output | Prediction + Confidence Score + Risk Level |
+
+### Confusion Matrix
+
+<p align="center">
+  <img src="results/confusion_matrix.png" alt="Confusion Matrix" width="70%">
+</p>
+
+The confusion matrix shows how many phishing and legitimate emails were correctly and incorrectly classified by the model.
+
+### Model Performance Visualization
+
+<p align="center">
+  <img src="results/model_performance.png" alt="Model Performance" width="70%">
+</p>
+
+The evaluation metrics help measure how well the model performs when classifying emails it has never seen before.
+
+## 🖼️ Project Screenshots
+
+### Email Input
+
+<p align="center">
+  <img src="assets/screenshots/day6-email-input.png" alt="Email Input" width="90%">
+</p>
+
+The application accepts a real email entered by the user for analysis.
+
+---
+
+### NLP Preprocessing
+
+<p align="center">
+  <img src="assets/screenshots/day6-cleaned-email.png" alt="NLP Preprocessing" width="90%">
+</p>
+
+The NLP pipeline cleans and prepares email text before it is analysed by the Machine Learning model.
+
+---
+
+### AI Security Report
+
+<p align="center">
+  <img src="assets/screenshots/day7-ai-security-report.png" alt="AI Security Report" width="90%">
+</p>
+
+The final analyser predicts whether an email is **Phishing** or **Legitimate**, calculates a confidence score, assigns a risk level, identifies suspicious keywords, and provides cybersecurity recommendations to help users respond safely.
+
+---
+
+### Model Evaluation
+
+<p align="center">
+  <img src="assets/screenshots/day8-model-evaluation.png" alt="Model Evaluation" width="90%">
+</p>
+
+The evaluation results summarize how well the phishing detection model performs on unseen email data.
+
+---
+
+## 📚 Learning Journey (Day 1 – Day 8)
+
+This project was built as part of my hands-on cybersecurity and Machine Learning learning journey.
+
+| Day | What I Learned |
+|-----|----------------|
+| **Day 1** | Introduction to phishing attacks, spam vs phishing, datasets, supervised Machine Learning, and phishing indicators. |
+| **Day 2** | Machine Learning basics including features (X), labels (y), dataset splitting, Logistic Regression, and saving trained models. |
+| **Day 3** | Trained my first phishing detection model using engineered email features and Joblib. |
+| **Day 4** | Learned Natural Language Processing fundamentals including tokenization, punctuation removal, lowercase conversion, stopword removal, and lemmatization. |
+| **Day 5** | Applied NLP preprocessing to email datasets and learned TF-IDF feature extraction. |
+| **Day 6** | Trained a second Machine Learning model using real email text with TF-IDF vectors. |
+| **Day 7** | Built an AI phishing email analyser capable of analysing real email content and producing prediction confidence scores. |
+| **Day 8** | Completed the end-to-end phishing detection pipeline and generated AI-powered cybersecurity security reports. |
+
+For detailed daily notes, see **notes.md**.
+
+---
+
+## 🛠️ Future Improvements
+
+I plan to continue improving this project by adding:
+
+- A graphical web interface using **Streamlit**.
+- Detection of suspicious URLs and domains inside emails.
+- Support for analysing complete `.eml` email files.
+- More advanced Machine Learning models for comparison.
+- Explainable AI features showing why an email was classified as phishing.
+- Real-time phishing detection through a web application.
+
+---
+
+## 👨‍💻 Author
+
+**Mohau Klas Phiandi**
+
+Bachelor of science in Mathematical Sciences Graduate 
+Major:Computer Science
+
+Passionate about Cybersecurity, Machine Learning, Data Analytics, Networking, and Cloud Computing.
+
+### Connect with me
+
+- GitHub: https://github.com/mkphiandi408
+- LinkedIn: https://www.linkedin.com/in/mohau-phiandi
+- Email: mkphiandi408@gmail.com
+
+---
+
+<p align="center">
+  ⭐ If you found this project interesting, consider giving it a star on GitHub.
+</p>
