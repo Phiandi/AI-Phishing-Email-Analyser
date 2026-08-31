@@ -67,7 +67,7 @@ The application cleans raw email text, converts it into numerical TF-IDF feature
 - Convert email text into TF-IDF numerical features.
 - Generate prediction confidence scores.
 - Detect suspicious phishing keywords.
-- Produce an AI-powered cybersecurity security report.
+- Produce an AI powered cybersecurity security report.
 
 ---
 
@@ -367,7 +367,7 @@ Passionate about Cybersecurity, Machine Learning, Data Analytics, Networking, an
 
 ### Connect with me
 
-- GitHub: https://github.com/mkphiandi408
+- GitHub: https://github.com/mkphiandi
 - LinkedIn: https://www.linkedin.com/in/mohau-phiandi
 - Email: mkphiandi408@gmail.com
 
