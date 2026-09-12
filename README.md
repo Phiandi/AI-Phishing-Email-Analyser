@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  An end-to-end phishing email detection system built with Python, Natural Language Processing (NLP), TF-IDF, and Logistic Regression.
+  An end to end phishing email detection system built with Python, Natural Language Processing (NLP), TF-IDF, and Logistic Regression.
 </p>
 
 <p align="center">
@@ -18,7 +18,7 @@
 
 Phishing emails are among the most common cybersecurity attacks used to steal passwords, banking information, and personal data. This project uses Machine Learning and Natural Language Processing to analyse email content and predict whether an email is **Phishing** or **Legitimate**.
 
-The application cleans raw email text, converts it into numerical TF-IDF features, uses a trained Logistic Regression model for prediction, calculates a confidence score, detects suspicious keywords, and produces a cybersecurity-style security report.
+The application cleans raw email text, converts it into numerical TF-IDF features, uses a trained Logistic Regression model for prediction, calculates a confidence score, detects suspicious keywords, and produces a cybersecurity style security report.
 
 ---
 
@@ -67,7 +67,7 @@ The application cleans raw email text, converts it into numerical TF-IDF feature
 - Convert email text into TF-IDF numerical features.
 - Generate prediction confidence scores.
 - Detect suspicious phishing keywords.
-- Produce an AI powered cybersecurity security report.
+- Produce an AI powered cybersecurity report.
 
 ---
 
@@ -326,7 +326,7 @@ The evaluation results summarize how well the phishing detection model performs 
 
 ## 📚 Learning Journey (Day 1 – Day 8)
 
-This project was built as part of my hands-on cybersecurity and Machine Learning learning journey.
+This project was built as part of my hands on cybersecurity and Machine Learning learning journey.
 
 | Day | What I Learned |
 |-----|----------------|
@@ -352,7 +352,7 @@ I plan to continue improving this project by adding:
 - Support for analysing complete `.eml` email files.
 - More advanced Machine Learning models for comparison.
 - Explainable AI features showing why an email was classified as phishing.
-- Real-time phishing detection through a web application.
+- Real time phishing detection through a web application.
 
 ---
 
@@ -361,7 +361,7 @@ I plan to continue improving this project by adding:
 **Mohau Klas Phiandi**
 
 Bachelor of science in Mathematical Sciences Graduate 
-Major:Computer Science
+Major:Mathematics and Computer Science
 
 Passionate about Cybersecurity, Machine Learning, Data Analytics, Networking, and Cloud Computing.
 
